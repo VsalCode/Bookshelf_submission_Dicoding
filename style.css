@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#bookshelf-app {
+  background-color: rgb(245, 240, 240);
+  min-height: 100vh;
+  display: flex;
+  background-image: url("perpus bg.jpg");
+  font-family: poppins, sans-serif;
+  padding-bottom: 7vh;
+  padding-top: 7vh;
+}
+
+/* KONTEN KIRI */
+
+#konten-kiri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 40px 0px 60px;
+}
+
+#form-input {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 550px;
+  height: 450px;
+  border-radius: 5px;
+  padding: 8px 60px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#form-input h1 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#form-input label {
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+#form-input input {
+  margin-bottom: 20px;
+  padding: 6px 0px;
+  border-width: 0;
+  border-style: 2px solid #9243dd;
+  border-bottom: 1px solid;
+  font-style: italic;
+}
+
+#form-input input:focus {
+  font-style: normal;
+}
+
+.btn-send {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-belum {
+  padding: 10px 0px;
+  width: 190px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #9243dd;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.btn-sudah {
+  padding: 10px 0px;
+  width: 190px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: rgb(12, 192, 27);
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.btn-belum:hover {
+  background-color: #b46df7;
+  color: white;
+}
+
+.btn-sudah:hover {
+  background-color: rgb(74, 218, 86);
+  color: white;
+}
+
+/*--------------------------------------------------------- 
+KONTEN KANAN 
+---------------------------------------------------------*/
+
+#konten-kanan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7vh;
+  margin: 0px 60px 0px 40px;
+}
+
+#konten-kanan h3 {
+  text-align: center;
+  padding: 17px 0px 0px 0px;
+}
+
+.selesai-dibaca,
+.belum-dibaca {
+  background-color: white;
+  width: 550px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#bukuBaruContainer {
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+#bukuBaru {
+  padding: 15px;
+  margin: 0px 1px 10px 1px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 12px 0px rgba(212, 212, 212, 0.75);
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(212, 212, 212, 0.75);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(212, 212, 212, 0.75);
+}
+
+#bukuBaru p {
+  padding: 2px 0px;
+  font-weight: 500;
+}
+
+.belum-ul p {
+  font-size: 1em;
+}
+
+.switchBtn {
+  font-size: 12px;
+  background-color: #9243dd;
+  color: white;
+  border-style: none;
+  font-weight: 500;
+  padding: 5px 7px;
+  border-radius: 5px;
+}
+
+.removeBtn {
+  font-size: 12px;
+  background-color: rgb(190, 31, 31);
+  color: white;
+  border-style: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #141414;
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-container p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Add icons using Font Awesome or other icon libraries */
+.fab {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 1268px) {
+  #bookshelf-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 70px;
+    background-color: #f0f0f0;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  #form-input {
+    margin: 0 auto;
+    width: 370px;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #konten-kanan {
+    margin: 20px;
+    gap: 10px;
+  }
+
+  .selesai-dibaca,
+  .belum-dibaca {
+    width: 370px;
+  }
+}
